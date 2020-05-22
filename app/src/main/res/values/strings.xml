@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AritelXLabs</string>
+    <string name="enter_your_keyword_here">Enter your query here...</string>
+    <string name="no_suggestions">No relevant suggestions found</string>
+
+    <string-array name="city_list">
+        <item>Gurgaon</item>
+        <item>Delhi</item>
+        <item>Jaipur</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Channai</item>
+        <item>Hyderabad</item>
+        <item>Pune</item>
+        <item>Noida</item>
+    </string-array>
+</resources>

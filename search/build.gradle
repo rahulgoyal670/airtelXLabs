@@ -1,0 +1,35 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Retrofit
+    api "com.squareup.retrofit2:retrofit:$latestRetrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$latestRetrofitVersion"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$retrofitCoroutinesVersion"
+
+
+    // OKHttp
+    api "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    api "com.squareup.okhttp3:okhttp-urlconnection:$okHttpVersion"
+
+
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion"
+
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewmodelKtxVersion"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleViewmodelKtxVersion"
+    api "androidx.lifecycle:lifecycle-runtime:$lifecycleViewmodelKtxVersion"
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+}
+repositories {
+    mavenCentral()
+}
+
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
